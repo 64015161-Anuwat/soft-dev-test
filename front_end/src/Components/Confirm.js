@@ -7,8 +7,8 @@ import {variables} from "../Variables";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
-const socket = io('http://localhost:5001');
-const socket0 = io('http://localhost:5001');
+const socket = io('https://soft-dev-back-end-test.onrender.com');
+const socket0 = io('https://soft-dev-back-end-test.onrender.com');
 
 function AppConfirm(){
     const {id, start} = useParams();

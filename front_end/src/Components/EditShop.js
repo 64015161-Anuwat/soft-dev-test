@@ -37,7 +37,7 @@ function AppEditShop(){
                     console.log(result)
                     setShop_name(result[0].shop_name)
                     setCategory(result[0].category)
-                    setPhonenumber(result[0].phonenumber)
+                    setPhonenumber(result[0].shop_phonenumber)
                     setLocation_name(result[0].location_name) 
                 }
             )
