@@ -565,7 +565,7 @@ app.get('/get_shop/:id', (req, res) => {
             res.status(404).json({error: '404 Not Found!'})
         }
         else{
-            var sql = 'SELECT *, shop.id as shop_id, user.id as user_id FROM shop JOIN user ON shop.create_by=user.id JOIN location ON shop.location_id=location.id WHERE shop.id=?'
+            var sql = 'SELECT *, shop.id as shop_id, user.id as user_id, shop.phonenumber as shop_phonenumber FROM shop JOIN user ON shop.create_by=user.id JOIN location ON shop.location_id=location.id WHERE shop.id=?'
             connection.query(sql, [id], (err, rows) => {
                 if (!err) {
                     response = rows

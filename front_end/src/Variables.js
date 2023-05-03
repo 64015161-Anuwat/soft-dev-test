@@ -1,4 +1,3 @@
 export const variables = {
-    API_URL: "http://127.0.0.1:5000/",
-    PHOTO_URL:"https://localhost:7285/api/Posts/img/"
+    API_URL: "https://soft-dev-back-end-test.onrender.com/"
 }

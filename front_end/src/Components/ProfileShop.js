@@ -140,7 +140,7 @@ function AppProfileShop(){
                                     <div className="PS_frame">
                                         <div><div className="PS_details"><span>Category :</span> {category_list}</div></div>
                                         <div><div className="PS_details"><img src='../img/rate.png' alt='' />-</div></div>
-                                        <div><div className="PS_details"><i className="fa-solid fa-phone"></i>{shop.phonenumber}</div></div>
+                                        <div><div className="PS_details"><i className="fa-solid fa-phone"></i>{shop.shop_phonenumber}</div></div>
                                         <div className=""><div className="PS_details "><img src='../img/address.png' alt='' />{shop.location_name}</div></div>
                                     </div>
                                 </div>

@@ -79,46 +79,46 @@ function AppEditShop(){
         console.log(category_list)
         const MySwal = withReactContent(Swal);
         e.preventDefault();
-        // try {
-        //     fetch(variables.API_URL+"update_shop", {
-        //         method: "POST",
-        //         headers: {
-        //             'Accept': 'application/json, text/plain',
-        //             'Content-Type': 'application/json;charset=UTF-8'
-        //         },
-        //         body: JSON.stringify({
-        //             id: id,
-        //             shop_name: shop_name,
-        //             category: category_list,
-        //             phonenumber: phonenumber,
-        //             location_name: location_name
-        //         }),
-        //     })
-        //     .then(response => response.json())
-        //     .then(result => {
-        //         if(result.msg){
-        //             MySwal.fire({
-        //                 html: <p>{result.msg}</p>,
-        //                 icon: "success",
-        //                 confirmButtonColor: "#F07221"
-        //             }).then(() => {
-        //                 // window.location.reload(false);
-        //             })
-        //         } 
-        //         else{
-        //             MySwal.fire({
-        //                 html: 
-        //                     '<p style="text-align: left; margin: 0 auto;max-width: fit-content;">'+
-        //                     result.error+
-        //                     '</p>',
-        //                 icon: "error",
-        //                 confirmButtonColor: "#F07221"
-        //             })
-        //         }
-        //     });
-        // } catch (err) {
-        //     alert(err);
-        // }
+        try {
+            fetch(variables.API_URL+"update_shop", {
+                method: "POST",
+                headers: {
+                    'Accept': 'application/json, text/plain',
+                    'Content-Type': 'application/json;charset=UTF-8'
+                },
+                body: JSON.stringify({
+                    id: id,
+                    shop_name: shop_name,
+                    category: category_list,
+                    phonenumber: phonenumber,
+                    location_name: location_name
+                }),
+            })
+            .then(response => response.json())
+            .then(result => {
+                if(result.msg){
+                    MySwal.fire({
+                        html: <p>{result.msg}</p>,
+                        icon: "success",
+                        confirmButtonColor: "#F07221"
+                    }).then(() => {
+                        // window.location.reload(false);
+                    })
+                } 
+                else{
+                    MySwal.fire({
+                        html: 
+                            '<p style="text-align: left; margin: 0 auto;max-width: fit-content;">'+
+                            result.error+
+                            '</p>',
+                        icon: "error",
+                        confirmButtonColor: "#F07221"
+                    })
+                }
+            });
+        } catch (err) {
+            alert(err);
+        }
     }
 
     return(
