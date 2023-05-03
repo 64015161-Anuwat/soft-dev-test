@@ -1,0 +1,7 @@
+.notfound{
+    background: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/3;
+}

@@ -1,0 +1,7 @@
+.pink{
+    background-color: #FF9898;
+    transition: .5s;
+}
+.pink:hover{
+    background-color: #fab8b8;
+}

@@ -1,0 +1,31 @@
+.history{
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px 0 #00000033, 0 3px 20px 0 rgba(0, 0, 0, 0.15);
+    margin: 40px auto;
+    max-width: 1200px;
+}
+.history h1{
+    text-align: center;
+    color: #FF9898;
+    margin: 15px;
+}
+.history .history-table table{
+    width: 90%;
+    margin: 0 auto;
+}
+.history .history-table table td{
+    text-align: center;
+    padding: 5px;
+}
+.history .history-table table td a{
+    color: #FF9898;
+    text-decoration: none;
+    transition: .3s;
+}
+.history .history-table table td a:hover{
+    font-size: .9em;
+    border-bottom: #FF9898 solid 3px;
+}

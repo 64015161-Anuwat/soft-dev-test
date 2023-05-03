@@ -1,0 +1,44 @@
+.Contact{
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    /* box-shadow: 0 2px 8px 0 #00000033, 0 3px 20px 0 rgba(0, 0, 0, 0.15); */
+    margin: 40px auto;
+    max-width: 800px;
+}
+.Contact h2{
+    margin: 0 auto;
+    text-align: center;
+}
+.Contact_item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 18px;
+    width: 100%;
+}
+.Contact_item_menu{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px 0 #00000033, 0 3px 20px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+
+.Contact_item_img img{
+    height: 250px;
+    width: 250px;
+}
+.Contact_item_StudentID{
+    font-weight: bold;
+}
+@media screen and (max-width: 720px){
+    .Contact_item{
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 18px;
+        width: 100%;
+    }
+}

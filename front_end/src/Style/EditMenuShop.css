@@ -1,0 +1,64 @@
+.EditMenuShop{
+    max-width: 1200px;
+    margin: 40px auto;
+    width: 100%;
+}
+.EMNS_add_box{
+    margin: 0 auto;
+    width: 320px;
+    padding: 20px;
+    box-shadow: 0 2px 8px 0 #00000033, 0 3px 20px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+.EMNS_add_box h1{
+    text-align: center;
+}
+.EMNS_add_active{
+    display:flex;
+}
+.EMNS_add_img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.EMNS_add_details{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.EMNS_add_img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #cecbcb;
+}
+.EMNS_add_img img:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.EMNS_add_input{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: elliEMNSis;
+    margin-bottom: 10px;
+}
+.EMNS_add_input input{
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 25px;
+    border: 1px solid;
+}
+.EMNS_button_submit{
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    background: #FF9898;
+    border-radius: 5px;
+    border: 1px;
+    width: 130px;
+}
+.EMNS_button_submit:hover{    
+    cursor: pointer;
+    opacity: 0.8;
+}
